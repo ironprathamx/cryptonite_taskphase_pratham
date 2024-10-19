@@ -26,7 +26,7 @@ root@users~becoming-root-with-su:/home/hacker# cat /flag
 pwn.college{w84MXfPkOfr6tWpN-65rhtPE70C.dVTN0UDLyUTN0czW}
 ```
 ## What I learnt 
-
+I learnt about su.
 # J.2 Other users with su
 ## Question
 With no arguments, su will start a root shell (after authenticating with root's password). However, you can also give a username as an argument to switch to that user instead of root. For example:
@@ -45,7 +45,7 @@ pwn.college{sDS0W2kUZsXo9b7nFX2hMuujpAB.dZTN0UDLyUTN0czW}
 zardus@users~other-users-with-su:/home/hacker$
 ```
 ## What I learnt 
-
+That su can be used to gain access to other users.
 # J.3 Cracking passwords 
 ## Question 
 When you enter a password for su, it compares it against the stored password for that user. These passwords used to be stored in /etc/passwd, but because /etc/passwd is a globally-readable file, this is not good for passwords, these were moved to /etc/shadow. Here is the example /etc/shadow from the previous level:
@@ -114,7 +114,7 @@ Congratulations, you have become Zardus! Here is your flag:
 pwn.college{YHrzsbRepturVS8SBymKDFDAAwZ.ddTN0UDLyUTN0czW}
 ```
 ## What I learnt 
-
+This was a fun level as I actually cracked a password using a actual hacking tool I think. 
 # J.4 Using sudo
 ## Question 
 In the olden days, a typical Linux system had a root password that administrators would use to su to root (after logging into their account with their normal account password). But root passwords are a pain to maintain, they (or their hashes!) can leak, and they don't lend themselves well to larger environments (e.g., fleets of servers). To address this, in recent decades, the world has moved from administration via su to administration via sudo (superuser do).
@@ -147,3 +147,4 @@ pwn.college{k--QND1poVm2LfJLUpisXvBeYzK.dhTN0UDLyUTN0czW}
 hacker@users~using-sudo:~$
 ```
 ## What I learnt 
+sudo is better than su as its safer. Fewer people need to know the root password or none at all. It also doesn't change the user and grants root perms only for one code.
