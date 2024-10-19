@@ -21,6 +21,7 @@ Yes! You chained /challenge/pwn and /challenge/college! Here is your flag:
 pwn.college{Y1SlPWzLJ8Bu3GfhQPY6C9BOb-X.dVTN4QDLyUTN0czW}
 ```
 ## What I learnt
+This felt a bit like C programming language.
 # K.2 Your First Shell Script
 ## Question 
 As you combine more and more commands to achieve complex effects, the length of the combined prompt quickly gets really annoying to deal with. When this happens, you can put these commands in a file, called a shell script, and run them by executing the file! For example, consider our semicolon technique:
@@ -60,6 +61,7 @@ Great job, you've written your first shell script! Here is the flag:
 pwn.college{0DynjBY81Rphh2EzS7x0zUKGFwK.dFzN4QDLyUTN0czW}
 ```
 ## What I learnt
+I tried using vim, which is a tool that I had some prior experience with but I think it didn't work since I was on Mac. I just echoed the commands in the code then and ran it. This was pretty interesting to me. I bet hackers use this a lot to run their codes in system computers.
 # K.3 Redirecting Script Output 
 ## Question 
 Let's try something a bit trickier! You've piped output between programs with |, but so far, this has just been between one command's output and a different command's input. But what if you wanted to send the output of several programs to one command? There are a few ways to do this, and we'll explore a simple one here: redirecting output from your script!
@@ -104,6 +106,7 @@ Correct! Here is your flag:
 pwn.college{kv7heTKZjqLCoXF3AcnT8Gkl62q.dhTM5QDLyUTN0czW}
 ```
 ## What I learnt 
+Some silly mistakes here.
 # K.4 Executable Shell Scripts 
 ## Question
 You have written your first shell script, but calling it via bash script.sh is a pain. Why do you need that bash?
@@ -131,3 +134,4 @@ Congratulations on your shell script execution! Your flag:
 pwn.college{cx0O7xh4-qQZW4YcYf4QMTCZby_.dRzNyUDLyUTN0czW}
 ```
 ## What I learnt
+I learnt how to execute shell scripts without using bash command.
