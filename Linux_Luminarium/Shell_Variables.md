@@ -33,6 +33,7 @@ pwn.college{YdPl5yIFdpbt_9sakxtIj3thIxQ.ddTN1QDLyUTN0czW}
 hacker@variables~printing-variables:/challenge$
 ```
 ## What I learnt
+I learnt how to print a variable.
 # G.2 Setting Variables
 ## Question 
 Naturally, as well as reading values stored in variables, you can write values to variables. This is done, as with many other languages, using =. To set variable VAR to value 1337, you would use:
@@ -54,6 +55,7 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{Q3PS34KeA4BsbwdGwMidDBXQEjK.dlTN1QDLyUTN0czW}
 ```
 ## What I learnt
+I learnt how to initiate a variable in bash
 # G.3 Multi-word Variables
 ## Question 
 In this level, you will learn about quoting. Spaces have special significance in the shell, and there are places where you can't use them spuriously. Recall our variable setting:
@@ -73,7 +75,7 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{QDQ8PCCmTXTujS7vvPTb2gLclMa.dBjN1QDLyUTN0czW}
 ```
 ## What I learnt
-
+I learnt how to put the value of a string with spaces or a multi worded value in a variable.
 # G.4 Exporting Variables
 ## Question
 By default, variables that you set in a shell session are local to that shell process. That is, other commands you run won't inherit them. You can experiment with this by simply invoking another shell process in your own shell, like so:
@@ -118,6 +120,7 @@ You've set the PWN variable to the proper value!
 You've set the COLLEGE variable to the proper value!
 ```
 ## What I learnt
+It was pretty straight forward.
 # G.5 Printing exported variables
 ## Question
 There are multiple ways to access variables in bash. echo was just one of them, and we'll now learn at least one more in this challenge.
@@ -144,6 +147,7 @@ PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/s
 _=/run/workspace/bin/env
 ```
 ## What I learnt
+I had to google this but env stands for environment variables. It wasn't mentioned so I looked it up as its easier to remember program names when you know what they stand for.
 # G.6 Storing command output
 ## Question
 In the course of working with the shell, you will often want to store the output of some command into a variable. Luckily, the shell makes this quite easy using something called Command Substitution! Observe:
@@ -168,6 +172,7 @@ pwn.college{8og4iWmj14ejmYRSTajNV_PyZ2S.dVzN0UDLyUTN0czW}
 hacker@variables~storing-command-output:~$
 ```
 ## What I learnt
+That I can store command outputs in a variable using command substitution $(command).
 # G.7 Reading input
 ## Question
 We'll start with reading input from the user (you). That's done using the aptly named read builtin, which reads input!
@@ -195,6 +200,7 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{QEgF-Hnf0jNoeBrqWybX4iP5S4j.dhzN1QDLyUTN0czW}
 ```
 ## What I learnt
+I learnt how to store user input into a variable.
 # G.8 Reading Files
 ## Question 
 Often, when shell users want to read a file into an environment variable, they do something like:
@@ -211,7 +217,7 @@ hacker@dojo:~$ echo "test" > some_file
 hacker@dojo:~$ read VAR < some_file
 hacker@dojo:~$ echo $VAR
 test
-What happened there? The example redirects some_file into the standard input of read, and so when read reads into VAR, it reads from the file! Now, use that to read /challenge/read_me into the PWN environment variable, and we'll give you the flag! The /challenge/read_me will keep changing, so you'll need to read it right into the PWN variable with one command!
+What happened there? The example redirects some_file into the standard input of read, and so when read reads into VAR, it reads from the file! Now, use that to read /challenge/read_ cme into the PWN environment variable, and we'll give you the flag! The /challenge/read_me will keep changing, so you'll need to read it right into the PWN variable with one command!
 ## Code
 ```
 hacker@variables~reading-files:~$ read PWN < /challenge/read_me
@@ -219,4 +225,4 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{MJaXBCxhSplTj9oNMMdGGkjvFoo.dBjM4QDLyUTN0czW}
 ```
 ## What I learnt
-
+I learnt how to read files into a variable.
