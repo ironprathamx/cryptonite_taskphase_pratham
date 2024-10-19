@@ -53,6 +53,7 @@ hacker@permissions~changing-file-ownership:~$ cat /flag
 pwn.college{oXaCJ3DXC_LD73ywUrfAS3SDkJU.dFTM2QDLyUTN0czW}
 ```
 ## What I learnt 
+Pretty simple
 # I.2 Groups and Files
 ## Question
 Sharing is caring, and sharing is built into Linux's design. Files have both an owning user and group. A group can have multiple users in it, and a user can be a member of multiple groups.
@@ -110,6 +111,7 @@ hacker@permissions~groups-and-files:~$ cat /flag
 pwn.college{crIfXVXnQNZC_676WuW0JxNykNT.dFzNyUDLyUTN0czW}
 ```
 ## What I learnt 
+Nothing.
 # I.3 Fun with Groups Names
 ## Question
 In the previous levels, you may have noticed that your hacker user is a member of the hacker group, and that zardus is a member of the zardus group. There is a convention in Linux that every user has their own group, but this does not have to be the case. For example, many computer labs will put all of their users into a single, shared users group.
@@ -127,6 +129,7 @@ hacker@permissions~fun-with-groups-names:~$ cat /flag
 pwn.college{w4uc77pGv2z7oDKO8JolCPUDyIj.dJzNyUDLyUTN0czW}
 ```
 ## What I learnt 
+Nothing much.
 # I.4 Changing Permissions
 ## Question
 So now we're well-versed in ownership. Let's talk about the other side of the coin: file permissions. Recall our example:
@@ -204,6 +207,7 @@ hacker@permissions~changing-permissions:~$ cat /flag
 pwn.college{UKQSzAKh86Aff_SosnpTcw7nu_G.dNzNyUDLyUTN0czW}
 ```
 ## What I learnt 
+I learnt how to change perms for a group. Thanks to my mentor, I learnt a better way to change perms by just doing chmod with a number representing the perms for each of the three categories. 
 # I.5 Executable Files
 ## Question
 So far, you have mostly been dealing with read permissions. This makes sense, because you have been making the /flag file readable to read it. In this level, we will explore execute permissions.
@@ -232,6 +236,7 @@ Successful execution! Here is your flag:
 pwn.college{0hZXbGkVbDRTrMLjz5nyy5gq6xb.dJTM2QDLyUTN0czW}
 ```
 ## What I learnt
+Nothing tbh.
 
 # I.6 Permission Tweaking Practice 
 ## Question 
@@ -462,6 +467,7 @@ hacker@permissions~permission-tweaking-practice:~$ /flag
 /flag: line 1: pwn.college{Qa1kmplDYviFbd15DiVygTesmDf.dBTM2QDLyUTN0czW}: command not found
 ```
 ## What I learnt
+Nothing it was just a repetitive question.
 # I.7 Permissions Setting Practice 
 ## Question
 In addition to adding and removing permissions, as in the previous level, chmod can also simply set permissions altogether, overwriting the old ones. This is done by using = instead of - or +. For example:
@@ -701,6 +707,7 @@ hacker@permissions~permissions-setting-practice:~$ /flag
 /flag: line 1: pwn.college{osXCkVv8KZF51WHaZfOVrLCru5d.dNTM5QDLyUTN0czW}: command not found
 ```
 ## What I learnt
+Nothing tbh.
 
 # I.8 The SUID Bit
 ## Question
@@ -809,3 +816,4 @@ root@permissions~the-suid-bit:/challenge# cat /flag
 pwn.college{87NOypd1t7MQ3t59PMwCqiCfY8h.dNTM2QDLyUTN0czW}
 ```
 ## What I learnt
+We set the SUID bit on ./getroot and after running it, we were using the root user and thus could read the contents of flag.
