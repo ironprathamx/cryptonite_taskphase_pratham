@@ -92,6 +92,7 @@ Now I will sleep for a while (so that you could find me with 'ps').
 
 ```
 ## What I learnt
+First, I tried doing things which obviously won't work which I learnt in previous modules.
 # H.2 Killing Processes
 ## Question
 You've launched processes, you've viewed processes, now you will learn to terminate processes! In Linux, this is done using the aggressively-named kill command. With default options (which is all we'll cover in this level), kill will terminate a process in a way that gives it a chance to get its affairs in order before ceasing to exist.
@@ -118,6 +119,7 @@ Great job! Here is your payment:
 pwn.college{khIciZlTyOIOERu5brAgpCjDSPx.dJDN4QDLyUTN0czW}
 ```
 ## What I learnt 
+To terminate or kill a process, we need the PID.
 # H.3 Interrupting Processes
 ## Question
 You've learned how to kill other processes with the kill command, but sometimes you just want to get rid of the process that's clogging up your terminal! Luckily, terminals have a hotkey for this: Ctrl-C (e.g., holding down the Ctrl key and pressing C) sends an "interrupt" to whatever application is waiting on input from the terminal and, typically, this causes the application to cleanly exit.
@@ -135,7 +137,7 @@ Good job! You have used Ctrl-C to interrupt this process! Here is your flag:
 pwn.college{ctsn7gYj5PmHffLCeITRzhkAhZl.dNDN4QDLyUTN0czW}
 ```
 ## What I learnt
-
+This was actually a pretty important thing as sometimes I would initiate a thing in the terminal and I won't be able to do anything as it was running so I ended up quitting the terminal and restarting it because I didn't know how to do this.
 # H.4 Suspending Processes 
 ## Question 
 You have learned to interrupt processes with Ctrl-C, but there are less drastic measures you can use to get your terminal back! You can suspend processes to the background with Ctrl-Z. In this level, we'll explore how this works and, in the next level, we'll figure out how to resume those suspended processes!
@@ -171,6 +173,7 @@ Yay, I found another version of me! Here is the flag:
 pwn.college{ETrZC5AGg9tSnHthCSaX2eiR1Pl.dVDN4QDLyUTN0czW}
 ```
 ## What I learnt
+Pretty simple.
 # H.5 Resuming processes 
 ## Question
 Usually, when you suspend processes, you'll want to resume them at some point. Otherwise, why not just terminate them? To resume processes, your shell provides the fg command, a builtin that takes the suspended process, resumes it, and puts it back in the foreground of your terminal.
@@ -178,11 +181,6 @@ Usually, when you suspend processes, you'll want to resume them at some point. O
 Go try it out! This challenge's run needs you to suspend it, then resume it. Good luck!
 ## Code
 ```
-hacker@processes~resuming-processes:~$ /challenge/run
-Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
-the 'fg' command! Or just press Enter to quit me!
-
-Goodbye!
 hacker@processes~resuming-processes:~$ /challenge/run
 Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
 the 'fg' command! Or just press Enter to quit me!
@@ -211,6 +209,7 @@ pwn.college{cjHM0ZTL6xI7Y8RphBAq6X0ttHH.dZDN4QDLyUTN0czW}
 Don't forget to press Enter to quit me!
 ```
 ## What I learnt
+That I had to enter fw directly instead of looking it up on the process list.
 # H.6 Backgrounding Processes
 ## Question
 You've resumed processes in the foreground with the fg command. You can also resume processes in the background with the bg command! This will allow the process to keep running, while giving you your shell back to invoke more commands in the meantime.
@@ -313,6 +312,7 @@ YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
 pwn.college{8FriJFwO9HZPuDkIOXN4fkcbs8W.dhDN4QDLyUTN0czW}
 ```
 ## What I learnt
+Nothing tbh.
 # H.8 Starting Background Processes 
 ## Question
 Of course, you don't have to suspend processes to background them: you can start the backgrounded right off the bat! It's easy; all you have to do is append a & to the command, like so:
@@ -341,6 +341,7 @@ pwn.college{08UTdFcIhPlXQb6Q5ZqYtWvQSUf.dlDN4QDLyUTN0czW}
 
 ```
 ## What I learnt
+A more effective way to background processes.
 # H.9 Process Exit Codes
 ## Question
 Every shell command, including every program and every builtin, exits with an exit code when it finishes running and terminates, This can be used by the shell, or the user of the shell (that's you!) to check if the process succeeded in its functionality (this determination, of course, depends on what the process is supposed to do in the first place).
@@ -370,3 +371,4 @@ CORRECT! Here is your flag:
 pwn.college{AfaE_Gv2qmRRIAhvlv6rhkWtw9s.dljN4UDLyUTN0czW}
 ```
 ## What I learnt
+I learnt about a special variable '?'
