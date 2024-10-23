@@ -26,4 +26,16 @@ bandit11@bandit:~$ The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ```
 
 ## What I learnt
+Well it was easy as I realised it was using ROT13 as I have had some experience in CTFs (just Oasis and the one in Tech Tatva). I used a website online dcode.fr i think to decode it and get the password.
+
+# Level 12->13 
+## Question 
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+
+## Code
+```
+
+```
+
+## What I learnt
 
