@@ -1,0 +1,2 @@
+# What I did
+I downloaded the cipher text, went online on this website called dcode.fr that I have been using for quite some time. It had an rsa-cipher, I inserted the values given to us and I got the flag as the output. Although I was successful in solving this challenge. I feel like I didn't learn anything much like the process of the encryption and decryption so I am going to watch some youtube videos later and update this markdown after I have an understanding of the concept. 
