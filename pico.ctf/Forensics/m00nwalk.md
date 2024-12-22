@@ -1,0 +1,2 @@
+# What I did
+I did research on moon image communications and found out about SSTV. To decode the wav file, I downloaded an app called Multimode Cocoa and it has a SSTV decoder mode. The second hint is the mascot of CMU, which is Scotty. While decoding, we therefore select option as Scottie. I let the audio play on my laptop and the microphone picked up the sounds and the software decoded them to form an image which had the flag in it. 
